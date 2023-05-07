@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="BUMauiApp.Controls.VkiButton">
+
+
+    <ContentView.ControlTemplate>
+        <ControlTemplate>
+            <Grid Grid.Row="1">
+                <ImageButton 
+                             Source="{TemplateBinding IconImageSource}"
+                             HeightRequest="{OnPlatform 70, Android=70, WinUI=70}"
+                             WidthRequest="{OnPlatform 70, Android=70, WinUI=70}"
+                             CornerRadius="{OnPlatform 25, Android=45, WinUI=45}"
+                             BackgroundColor="Wheat"
+                             Padding="20"
+                             VerticalOptions="End"
+                             HorizontalOptions="End"                        
+                             Pressed="ImageButton_Pressed_1">
+
+                    <ImageButton.Margin>
+                        <OnPlatform x:TypeArguments="Thickness">
+                            <On Platform="WinUI" Value="0, -75, 0, 0"/>
+                            <On Platform="Android" Value="0, -60, 15, 0"/>
+                        </OnPlatform>
+                    </ImageButton.Margin>
+
+                    <ImageButton.Shadow>
+                        <Shadow Brush="orange"
+                        Radius="{OnPlatform 50, Android=55}"
+                        Offset="5, 5"/>
+                    </ImageButton.Shadow>
+
+                    <ImageButton.Behaviors>
+                        <toolkit:IconTintColorBehavior TintColor="Orange" />
+                    </ImageButton.Behaviors>
+                </ImageButton>
+            </Grid>
+        </ControlTemplate>
+    </ContentView.ControlTemplate>
+
+</ContentView>

@@ -1,0 +1,1 @@
+C:\Users\BUSRA\source\repos\BUMauiApp\BUMauiApp\BUMauiApp.csproj;x64

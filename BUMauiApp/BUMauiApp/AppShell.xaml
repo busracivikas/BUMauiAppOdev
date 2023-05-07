@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="BUMauiApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:BUMauiApp"
+    Shell.FlyoutBehavior="Flyout">
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+    <ShellContent
+        Icon="home.png"
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+        Icon="indeks.png"
+        Title="Vücut İndeksi"
+        ContentTemplate="{DataTemplate local:VucutIndeks}"
+        Route="VucutIndeks" />
+
+    <ShellContent
+        Icon="kredi.png"
+        Title="Kredi Hesapla"
+        ContentTemplate="{DataTemplate local:KrediHesap}"
+        Route="KrediHesap" />
+
+    <ShellContent
+        Icon="renk.png"
+        Title="Renk Seçenekleri"
+        ContentTemplate="{DataTemplate local:RenkSec}"
+        Route="RenkSec" />
+
+    <ShellContent
+        Icon="liste.png"
+        Title="Yapılacaklar Listesi"
+        ContentTemplate="{DataTemplate local:YapList}"
+        Route="YapList" />
+
+        <ShellContent
+        Icon="calendar.png"
+        Title="Takvim"
+        ContentTemplate="{DataTemplate local:Calendar}"
+        Route="Calendar" />
+        
+        
+    </FlyoutItem>
+</Shell>

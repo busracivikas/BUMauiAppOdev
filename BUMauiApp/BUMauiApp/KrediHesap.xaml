@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BUMauiApp.KrediHesap"
+             Title="Kredi Hesapla" BackgroundColor="Bisque">
+    <Grid RowDefinitions="Auto,*,Auto">
+        <Label Text="Kredi Hesaplama İşlemleri" TextColor="CornflowerBlue" FontSize="Large"/>
+        <CollectionView>
+            <CollectionView.Header>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="*,*,*,*">
+                        <Label Text="İhtiyaç Kredisi" Grid.Column="0"/>
+                        <Label Text="Konut Kredisi" Grid.Column="1"/>
+                        <Label Text="Taşıt Kredisi" Grid.Column="2"/>
+                        <Label Text="Ticari Kredi" Grid.Column="3"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.Header>
+        </CollectionView>
+    </Grid>
+</ContentPage>

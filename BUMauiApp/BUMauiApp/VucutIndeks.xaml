@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:controls="clr-namespace:BUMauiApp.Control"
+             x:Class="BUMauiApp.VucutIndeks"
+             Title="Vücut Kitle İndeksini Öğren" BackgroundColor="Bisque">
+
+    
+    <ScrollView>
+       
+            <Grid RowDefinitions="*, Auto, Auto">
+            <Border Grid.Row="0"
+                Padding="20"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 0,0,0,0">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="OrangeRed"
+                                  Offset="0.1"/>
+                        <GradientStop Color="Orange"
+                                  Offset="1.0"/>
+                        <GradientStop Color="DarkOrange"
+                                  Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <VerticalStackLayout Spacing="20">
+                    <Label Text="CİNSİYET"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"/>
+
+                    <Grid ColumnDefinitions="*,*"
+                      ColumnSpacing="15">
+                        <Border Grid.Column="0"
+                            BackgroundColor="White"
+                            StrokeShape="RoundRectangle 25"
+                            Padding="20, 10"
+                            StrokeThickness="0">
+                            <HorizontalStackLayout HorizontalOptions="Center"
+                                               Spacing="10">
+                                <Image Source="male.png"
+                                   HeightRequest="20"
+                                   WidthRequest="{OnPlatform 20, Android=25, WinUI=25}">
+                                    <Image.Behaviors>
+                                        <toolkit:IconTintColorBehavior TintColor="Orange" />
+                                    </Image.Behaviors>
+                                </Image>
+                                <Label Text="Erkek"
+                                   FontAttributes="Bold"
+                                   TextColor="Orange"/>
+                            </HorizontalStackLayout>
+
+                        </Border>
+
+                        <controls:CinsiyetControl Grid.Column="1" 
+                                                  IconImageSource="female.png" 
+                                                  Text="Kadın" 
+                                                  Color="white"
+                                                  BgColor="LightPink"/>
+                        <controls:CinsiyetControl Grid.Column="1" 
+                                                  IconImageSource="female.png" 
+                                                  Text="Kadın" 
+                                                  Color="white"
+                                                  BgColor="LightPink"/>
+
+                        <Border Grid.Column="1"
+                            BackgroundColor="LightPink"
+                            StrokeShape="RoundRectangle 25"
+                            Padding="20, 10"
+                            StrokeThickness="0">
+                            <HorizontalStackLayout HorizontalOptions="Center"
+                                               Spacing="10">
+                                <Image Source="female.png"
+                                   HeightRequest="20"
+                                   WidthRequest="{OnPlatform 20, Android=25, WinUI=25}">
+                                    <Image.Behaviors>
+                                        <toolkit:IconTintColorBehavior TintColor="White" />
+                                    </Image.Behaviors>
+                                </Image>
+                                <Label Text="Kadın"
+                                   FontAttributes="Bold"
+                                   TextColor="White"/>
+                            </HorizontalStackLayout>
+
+                        </Border>
+
+
+                    </Grid>
+
+                    <Label Text="Boy"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"
+                       Margin="0,20,0,0"/>
+
+                    <Border Grid.Column="1"
+                            BackgroundColor="MediumOrchid"
+                            StrokeShape="RoundRectangle 15"
+                            Padding="20, 10"
+                            StrokeThickness="0"
+                            HorizontalOptions="Center">
+                        <Label Text="{Binding Source={x:Reference heightSlider},
+                        Path=Value,
+                        StringFormat='{0:F0} cm'}"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"
+                       Padding="5"/>
+                    </Border>
+
+                    <Slider x:Name="heightSlider"
+                        ThumbColor="White"
+                        MinimumTrackColor="White"
+                        MaximumTrackColor="White"
+                        Maximum="250"
+                        Minimum="10"
+                        Value="170"/>
+
+
+                    <Label Text="Kilo"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"
+                       Margin="0,20,0,0"/>
+
+                    <Border Grid.Column="1"
+                            BackgroundColor="MediumOrchid"
+                            StrokeShape="RoundRectangle 10"
+                            Padding="20, 10"
+                            StrokeThickness="0"
+                            HorizontalOptions="Center">
+                        <Label Text="{Binding Source={x:Reference weightSlider},
+                        Path=Value,
+                        StringFormat='{0:F0} kg'}"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"
+                       Padding="5"/>
+                    </Border>
+
+                    <Slider x:Name="weightSlider"
+                        ThumbColor="White"
+                        MinimumTrackColor="White"
+                        MaximumTrackColor="White"
+                        Maximum="150"
+                        Minimum="10"
+                        Value="68"/>
+
+                </VerticalStackLayout>
+
+            </Border>
+
+            <Grid Grid.Row="1">
+               
+                <Grid.Margin>
+                    <OnPlatform x:TypeArguments="Thickness">
+                        <On Platform="WinUI" Value="0, -75, 0, 0"/>
+                        <On Platform="Android" Value="0, -60, 0, 0"/>
+                    </OnPlatform>
+                </Grid.Margin>
+
+                <Border Grid.Row="1"
+                Padding="25"
+                StrokeShape="RoundRectangle 30,30,0,0"
+                StrokeThickness="0"
+                BackgroundColor="LightYellow"
+                Margin="0,0,0,0">
+                    <Border.Shadow>
+                        <Shadow Brush="orange"
+                                Radius="100"
+                                Offset="-150,-150"/>
+                    </Border.Shadow>
+
+                </Border>
+
+
+              <!--<controls:VkiButtonControl Grid.Row="1"
+                                          IconImageSource="right.png"
+                                          ImgBtnPressed="ImgBtnPressed"/>-->
+
+                <ImageButton Grid.Row="1" 
+                             Source="right.png"
+                             HeightRequest="{OnPlatform 70, Android=70, WinUI=70}"
+                             WidthRequest="{OnPlatform 70, Android=70, WinUI=70}"
+                             CornerRadius="{OnPlatform 25, Android=45, WinUI=45}"
+                             BackgroundColor="Wheat"
+                             Padding="10"
+                             VerticalOptions="End"
+                             HorizontalOptions="End"
+                             Margin="0, -75, 15, 0"
+                             Pressed="ImgBtnPressed">
+
+                    <ImageButton.Margin>
+                        <OnPlatform x:TypeArguments="Thickness">
+                            <On Platform="WinUI" Value="0, -75, 0, 0"/>
+                            <On Platform="Android" Value="0, -60, 15, 0"/>
+                        </OnPlatform>
+                    </ImageButton.Margin>
+                    
+                    <ImageButton.Shadow>
+                        <Shadow Brush="orange"
+                        Radius="20"
+                        Offset="5, 5"/>
+                    </ImageButton.Shadow>
+
+                    <ImageButton.Behaviors>
+                        <toolkit:IconTintColorBehavior TintColor="Orange" />
+                    </ImageButton.Behaviors>
+
+                </ImageButton>
+            </Grid>
+
+            <VerticalStackLayout Grid.Row="2"
+                                 Padding="25"
+                                 Spacing="25">
+                <Label Text="Sağlıklı günler."
+                       FontSize="15"
+                       FontAttributes="Italic"/>
+            </VerticalStackLayout>
+
+        </Grid>
+
+    </ScrollView>
+   
+</ContentPage>

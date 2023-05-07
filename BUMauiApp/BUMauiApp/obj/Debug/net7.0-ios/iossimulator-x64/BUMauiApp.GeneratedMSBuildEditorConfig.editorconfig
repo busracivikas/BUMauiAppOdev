@@ -1,0 +1,89 @@
+is_global = true
+build_property.TargetFramework = net7.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BUMauiApp
+build_property.ProjectDir = C:\Users\BUSRA\source\repos\BUMauiApp\BUMauiApp\
+
+[C:/Users/BUSRA/source/repos/BUMauiApp/BUMauiApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BUMauiApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/BUSRA/source/repos/BUMauiApp/BUMauiApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BUMauiApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/BUSRA/source/repos/BUMauiApp/BUMauiApp/Calendar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BUMauiApp.Calendar.xaml
+build_metadata.AdditionalFiles.TargetPath = Calendar.xaml
+build_metadata.AdditionalFiles.RelativePath = Calendar.xaml
+
+[C:/Users/BUSRA/source/repos/BUMauiApp/BUMauiApp/Controls/CalendarView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BUMauiApp.Controls.CalendarView.xaml
+build_metadata.AdditionalFiles.TargetPath = Controls\CalendarView.xaml
+build_metadata.AdditionalFiles.RelativePath = Controls\CalendarView.xaml
+
+[C:/Users/BUSRA/source/repos/BUMauiApp/BUMauiApp/Controls/CinsiyetControl.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BUMauiApp.Controls.CinsiyetControl.xaml
+build_metadata.AdditionalFiles.TargetPath = Controls\CinsiyetControl.xaml
+build_metadata.AdditionalFiles.RelativePath = Controls\CinsiyetControl.xaml
+
+[C:/Users/BUSRA/source/repos/BUMauiApp/BUMauiApp/Controls/VkiButtonControl.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BUMauiApp.Controls.VkiButtonControl.xaml
+build_metadata.AdditionalFiles.TargetPath = Controls\VkiButtonControl.xaml
+build_metadata.AdditionalFiles.RelativePath = Controls\VkiButtonControl.xaml
+
+[C:/Users/BUSRA/source/repos/BUMauiApp/BUMauiApp/KrediHesap.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BUMauiApp.KrediHesap.xaml
+build_metadata.AdditionalFiles.TargetPath = KrediHesap.xaml
+build_metadata.AdditionalFiles.RelativePath = KrediHesap.xaml
+
+[C:/Users/BUSRA/source/repos/BUMauiApp/BUMauiApp/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BUMauiApp.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/BUSRA/source/repos/BUMauiApp/BUMauiApp/RenkSec.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BUMauiApp.RenkSec.xaml
+build_metadata.AdditionalFiles.TargetPath = RenkSec.xaml
+build_metadata.AdditionalFiles.RelativePath = RenkSec.xaml
+
+[C:/Users/BUSRA/source/repos/BUMauiApp/BUMauiApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BUMauiApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/BUSRA/source/repos/BUMauiApp/BUMauiApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BUMauiApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/BUSRA/source/repos/BUMauiApp/BUMauiApp/VucutIndeks.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BUMauiApp.VucutIndeks.xaml
+build_metadata.AdditionalFiles.TargetPath = VucutIndeks.xaml
+build_metadata.AdditionalFiles.RelativePath = VucutIndeks.xaml
+
+[C:/Users/BUSRA/source/repos/BUMauiApp/BUMauiApp/YapList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BUMauiApp.YapList.xaml
+build_metadata.AdditionalFiles.TargetPath = YapList.xaml
+build_metadata.AdditionalFiles.RelativePath = YapList.xaml
